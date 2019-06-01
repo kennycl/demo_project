@@ -88,4 +88,4 @@ production:
   <<: *default
   database: demo_project_production
   username: demo_project
-  password: <%= ENV['DB_PASSWORD'] %>
+  password: 
