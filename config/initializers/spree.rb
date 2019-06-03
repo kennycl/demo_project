@@ -16,6 +16,10 @@ Spree.config do |config|
   # config.track_inventory_levels = false
 end
 
+Paperclip.interpolates(:s3_eu_url) do |attachment, style|
+"#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/},"")}"
+end
+
 Spree.user_class = "Spree::User"
 
 Spree.config do |config|
