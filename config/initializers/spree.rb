@@ -16,15 +16,14 @@ Spree.config do |config|
   # config.track_inventory_levels = false
 
 
-Paperclip.interpolates(:s3_eu_url) do |attachment, style|
-"#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/},"")}"
-
-
 Spree.user_class = "Spree::User"
 
-
+config.paperclip_defaults = {
   config.use_s3 = true
   config.s3_bucket = '<hikennethy>'
   config.s3_access_key = "<AKIAI47HMXASRYQXVLRA>"
   config.s3_secret = "<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>"
+  
+  }
+
 end
