@@ -38,6 +38,8 @@ gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 
 
 gem "figaro"
 
+gem 'rails_12factor', group: :production
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
