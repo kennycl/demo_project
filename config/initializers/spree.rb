@@ -18,12 +18,6 @@ Spree.config do |config|
 
 Spree.user_class = "Spree::User"
 
-config.paperclip_defaults = {
-  config.use_s3 = true
-  config.s3_bucket = '<hikennethy>'
-  config.s3_access_key = "<AKIAI47HMXASRYQXVLRA>"
-  config.s3_secret = "<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>"
-  
-  }
+
 
 end

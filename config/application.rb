@@ -19,9 +19,18 @@ module DemoProject
       Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
         
+        
       
 
  config.assets.initialize_on_precompile = false
+ 
+ config.paperclip_defaults = {
+   config.use_s3 = true
+   config.s3_bucket = '<hikennethy>'
+   config.s3_access_key = "<AKIAI47HMXASRYQXVLRA>"
+   config.s3_secret = "<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>"
+  
+   }
  
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
