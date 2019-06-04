@@ -13,18 +13,19 @@ module DemoProject
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
-        
+      end
 
       # Load application's view overrides
       Dir.glob(File.join(File.dirname(__FILE__), "../app/overrides/*.rb")) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
-      
+      end
+    end
 
- config.assets.initialize_on_precompile = false
- 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+  end
+end
