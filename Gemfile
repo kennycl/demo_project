@@ -38,7 +38,7 @@ gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 
 
 gem "figaro"
 
-gem "aws-sdk-s3", 
+gem "aws-sdk-s3"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
