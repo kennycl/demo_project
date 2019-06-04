@@ -38,10 +38,6 @@ gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 
 
 gem "figaro"
 
-gem 'rails_serve_static_assets'
-gem 'aws-sdk'
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -65,6 +61,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-ruby '2.4.2'
 
 gem 'sprockets-helpers', '~> 1.2.1'

@@ -1,1 +1,0 @@
-$(document).on("ready",function(){$(".main_menu_toggle").click(function(){$(".sidebar").toggleClass("sidebar_open")}),$(".table").wrap("<div class='table-responsive'></div>")});
